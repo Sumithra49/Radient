@@ -1,6 +1,6 @@
 const request = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../../index"); // Import your Express app
+const app = require("../index"); // Import your Express app
 
 beforeAll(async () => {
   await mongoose.connect(process.env.MONGO_URI);
@@ -14,7 +14,7 @@ describe("Auth Routes", () => {
   let userEmail = `test${Date.now()}@mail.com`;
 
   it("should register a new user", async () => {
-    const res = await request(app).post("/api/auth/register").send({
+    const res = await request(app).post("/auth/register").send({
       username: "testuser",
       email: userEmail,
       password: "password123",
@@ -25,7 +25,7 @@ describe("Auth Routes", () => {
   });
 
   it("should login the user", async () => {
-    const res = await request(app).post("/api/auth/login").send({
+    const res = await request(app).post("/auth/login").send({
       email: userEmail,
       password: "password123",
     });
@@ -45,7 +45,7 @@ describe("Auth Routes", () => {
   });
 
   it("should return error for invalid email during password reset", async () => {
-    const res = await request(app).post("/api/auth/forgot-password").send({
+    const res = await request(app).post("/auth/forgot-password").send({
       email: "invalidemail@mail.com",
     });
 
