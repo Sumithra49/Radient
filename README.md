@@ -1,4 +1,5 @@
-# Radient
+## Radient Backend - User Authentication & Session Management
+This project implements secure User Authentication and robust Session Management for a Node.js Express application. It uses MongoDB as the primary database for user data and Redis for caching session data to enhance performance and scalability.
 
 ## Folder structure
 ![image](https://github.com/user-attachments/assets/11179637-1218-442f-a55f-81b2334764fc)
