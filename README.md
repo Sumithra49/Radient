@@ -32,7 +32,25 @@
  - npm start
 
 
+## Security Measures
+- Password hashing with bcrypt & salting.
+- Input validation & sanitization with express-validator.
+- Session storage in Redis with expiration handling.
+- Recommend running over HTTPS in production.
+- Avoid storing sensitive tokens in plain text.
 
+ ## Logging
+- Uses winston for logging authentication activities.
+- Logs events like successful logins, failed attempts, password reset requests, and session terminations.
+- Logs stored in logs/ directory.
+## Testing
+- Unit tests for controller functions & services.
+- Integration tests for API endpoints.
+- Uses Jest or Mocha & Supertest for testing.
+
+## Run tests:
+
+- npm run test
 
 ## Registration:
 ![image](https://github.com/user-attachments/assets/9d04d8b4-a817-42d3-af86-12abc71dfd1e)
