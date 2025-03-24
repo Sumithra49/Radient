@@ -1,4 +1,8 @@
 # Radient
+
+## Folder structure
+![image](https://github.com/user-attachments/assets/11179637-1218-442f-a55f-81b2334764fc)
+
 ## Tech Stack
 - Backend: Node.js, Express.js
 - Database: MongoDB (Mongoose)
@@ -50,7 +54,8 @@
 
 ## Run tests:
 
-- npm run test
+- npm run test or
+- npx test
 
 ## Registration:
 ![image](https://github.com/user-attachments/assets/9d04d8b4-a817-42d3-af86-12abc71dfd1e)
