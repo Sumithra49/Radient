@@ -12,31 +12,24 @@
 ## Installation
 # Clone Repo
 
-bash
-Copy
-Edit
-git clone https://github.com/Sumithrat49/Radient.git
-cd Radient
-Install Dependencies
 
-bash
+- git clone https://github.com/Sumithrat49/Radient.git
+- cd Radient
+   ## Install Dependencies
+- npm install
+## Set Environment Variables Create a .env file in root:
 
-npm install
-- Set Environment Variables Create a .env file in root:
 
-bash
-Copy
-Edit
-PORT=
-MONGO_URI=your_mongodb_uri
-REDIS_URL=your_redis_url
-SESSION_SECRET=your_session_secret
-JWT_SECRET=your_jwt_secret
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_email_password
-CLIENT_URL=http://localhost:3000
+- PORT=
+- MONGO_URI=your_mongodb_uri
+- REDIS_URL=your_redis_url
+- SESSION_SECRET=your_session_secret
+- JWT_SECRET=your_jwt_secret
+- EMAIL_USER=your_email@example.com
+- EMAIL_PASS=your_email_password
+- CLIENT_URL=http://localhost:3000
 ## Run App
-npm start
+ - npm start
 
 
 
