@@ -12,7 +12,7 @@ This project implements secure User Authentication and robust Session Management
 - Validation: express-validator
 - Password Hashing: bcrypt
 - Logging: winston
-- Testing: Jest 
+- Testing: Jest,
 
 ## Installation
 # Clone Repo
